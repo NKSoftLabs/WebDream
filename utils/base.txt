@@ -23,10 +23,10 @@
     <!--Enlaces del menú lateral-->
     <ul class="sidebar-links">
       <li><a href="index.html">Inicio</a></li>
-      <li><a href="nks.html">NKS</a></li>
-      <li><a href="precios.html">Precios</a></li>
-      <li><a href="salas.html">Salas</a></li>
-      <li><a href="acerca_de.html">Acerca De</a></li>
+      <li><a href="#">NKS</a></li>
+      <li><a href="#">Precios</a></li>
+      <li><a href="#">Salas</a></li>
+      <li><a href="#">Acerca De</a></li>
     </ul>
   </nav>
 
@@ -49,21 +49,9 @@
   <!--Contenido de la pagina-->
   <main class="main-content">
 
-    <!-- Box de título de sección -->
-    <div class="section-box">
-      <h1>¿En busca de diversión y trabajo?</h1>
-      <p>Somos tu mejor opcion</p>
-    </div>
 
-    <!-- Box de contenido -->
-    <div class="content-box">
-    <p>
-      lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-      lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-      lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-      lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-    </p>
-  </div>
+
+
 
   </main>
 
