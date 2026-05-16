@@ -405,3 +405,39 @@ header, nav, main, footer {
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.8;
 }
+
+/* box acerca de */
+.about-box {
+  border: 1px solid rgba(200, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 2.5rem 3rem;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+  background: #1C1C1C;
+  box-shadow: 0 0 24px rgba(200, 0, 0, 0.15);
+}
+
+.about-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.about-row:last-child {
+  border-bottom: none;
+}
+
+.about-row span:first-child {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(200, 0, 0, 0.85);
+  font-weight: 600;
+}
+
+.about-row span:last-child {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+}
