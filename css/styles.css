@@ -1,7 +1,6 @@
 /* Para comentar */
 /*  */
 
-
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -104,7 +103,45 @@ header, nav, main, footer {
 
 /* Mantener la imagen centrada */
 .topbar-right {
-  width: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* Botones de autenticacion */
+.auth-buttons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.btn-login {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-login:hover {
+  border-color: #ffffff;
+}
+
+.btn-registro {
+  background: rgba(200, 0, 0, 0.8);
+  border: 1px solid transparent;
+  color: #ffffff;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-registro:hover {
+  background: rgba(200, 0, 0, 1);
 }
 
 /* Menu lateral */
@@ -440,4 +477,74 @@ header, nav, main, footer {
 .about-row span:last-child {
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.85);
+}
+
+/* BOX DE PUNTOS POR SALA */
+.puntos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+}
+
+.punto-card {
+  border: 1px solid rgba(200, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #1C1C1C;
+  box-shadow: 0 0 24px rgba(200, 0, 0, 0.15);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.punto-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(200, 0, 0, 0.3);
+}
+
+.punto-card .pts-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.punto-card .pts-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(200, 0, 0, 0.85);
+}
+
+.punto-card .pts-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Box de informacion de puntos */
+.infopuntos-box {
+  border: 1px solid rgba(200, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+  background: #1C1C1C;
+  box-shadow: 0 0 24px rgba(200, 0, 0, 0.15);
+  text-align: center;
+}
+
+.infopuntos-box p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+}
+
+.infopuntos-box strong {
+  color: #ffffff;
 }

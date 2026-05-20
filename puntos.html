@@ -1,0 +1,197 @@
+<!-- Para Comentar -->
+ <!--  -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NKS</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!--Overlay Menu lateral-->
+  <div class="overlay" id="overlay" onclick="cerrarMenu()"></div>
+
+  <!--Menu lateral-->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-logo">NKS</span>
+      <button class="sidebar-close" onclick="cerrarMenu()">&#10005;</button>
+    </div>
+    <!--Enlaces del menú lateral-->
+    <ul class="sidebar-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nks.html">NKS</a></li>
+      <li><a href="precios.html">Precios</a></li>
+      <li><a href="salas.html">Salas</a></li>
+      <li><a href="acerca_de.html">Acerca De</a></li>
+      <li><a href="puntos.html">Puntos</a></li>
+    </ul>
+  </nav>
+
+  <!--Barra superior-->
+  <header class="topbar">
+    <button class="menu-btn" onclick="abrirMenu()" aria-label="Abrir menú">
+      <span class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+    <div class="topbar-center">
+      <!--Imagen de la barra superior-->
+      <img src="img/logo.jpg" alt="NKS Logo" class="topbar-img" />
+    </div>
+    <div class="topbar-right"></div>
+  </header>
+
+  <!--Contenido de la pagina-->
+  <main class="main-content">
+
+    <!-- Box de título de sección -->
+    <div class="section-box">
+      <h1>Acumulacion de Puntos</h1>
+    </div>
+
+    <!-- Box de contenido -->
+    <div class="content-box">
+        <p>
+            En NKS, valoramos a nuestros clientes y queremos recompensar su lealtad. 
+            Por eso, hemos implementado un sistema de acumulación de puntos que te permite ganar beneficios exclusivos cada vez que utilizas nuestros servicios.
+        </p>
+    </div>
+
+    <!-- Box de puntos -->
+
+    <div class="puntos-grid">
+
+        <div class="punto-card">
+            <h3>Gaming</h3>
+            <div class="pts-row">
+            <span class="pts-label">Genera</span>
+            <span class="pts-value">100 pts / hr</span>
+            </div>
+            <div class="pts-row">
+            <span class="pts-label">Canje</span>
+            <span class="pts-value">200 pts / hr</span>
+            </div>
+        </div>
+
+        <div class="punto-card">
+            <h3>Oficina Básica</h3>
+            <div class="pts-row">
+            <span class="pts-label">Genera</span>
+            <span class="pts-value">60 pts / hr</span>
+            </div>
+            <div class="pts-row">
+            <span class="pts-label">Canje</span>
+            <span class="pts-value">120 pts / hr</span>
+            </div>
+        </div>
+
+        <div class="punto-card">
+            <h3>Oficina Avanzada</h3>
+            <div class="pts-row">
+            <span class="pts-label">Genera</span>
+            <span class="pts-value">80 pts / hr</span>
+            </div>
+            <div class="pts-row">
+            <span class="pts-label">Canje</span>
+            <span class="pts-value">160 pts / hr</span>
+            </div>
+        </div>
+
+        <div class="punto-card">
+            <h3>Streaming</h3>
+            <div class="pts-row">
+            <span class="pts-label">Genera</span>
+            <span class="pts-value">120 pts / hr</span>
+            </div>
+            <div class="pts-row">
+            <span class="pts-label">Canje</span>
+            <span class="pts-value">240 pts / hr</span>
+            </div>
+        </div>
+
+        <div class="punto-card">
+            <h3>Películas</h3>
+            <div class="pts-row">
+            <span class="pts-label">Genera</span>
+            <span class="pts-value">100 pts x persona</span>
+            </div>
+            <div class="pts-row">
+            <span class="pts-label">Canje</span>
+            <span class="pts-value">200 pts x persona</span>
+            </div>
+        </div>
+
+        <div class="punto-card">
+            <h3>Social</h3>
+            <div class="pts-row">
+            <span class="pts-label">Genera</span>
+            <span class="pts-value">60 pts / hr</span>
+            </div>
+            <div class="pts-row">
+            <span class="pts-label">Canje</span>
+            <span class="pts-value">120 pts / hr</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Box Informacion Adicional-->
+
+    <div class="infopuntos-box">
+        <p>¿Aún no estás registrado? Al crear tu cuenta recibes <strong>200 pts</strong> de bienvenida.</p>
+    </div>
+
+
+
+
+  </main>
+
+  <!--Pie de página-->
+  
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p>+506 2234 0192</p>
+        <p>info@nks.com</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Ubicación</h4>
+        <p>Cartago, Tucurrique, Costa Rica</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Redes Sociales</h4>
+        <p>Instagram</p>
+        <p>Facebook</p>
+        <p>TikTok</p>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 NKSoftwareLabs. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!--Scripts-->
+  <script>
+    function abrirMenu() {
+      document.getElementById('sidebar').classList.add('open');
+      document.getElementById('overlay').classList.add('active');
+    }
+    function cerrarMenu() {
+      document.getElementById('sidebar').classList.remove('open');
+      document.getElementById('overlay').classList.remove('active');
+    }
+  </script>
+
+</body>
+</html>
