@@ -1,0 +1,150 @@
+
+/* RESPONSIVE */
+ 
+/* Tablet: 768px y menos */
+@media (max-width: 768px) {
+ 
+  .main-content {
+    padding: 2rem 1rem;
+  }
+ 
+  /* Section box más compacto */
+  .section-box {
+    padding: 1.5rem 1.5rem;
+    margin: 2rem auto;
+  }
+ 
+  .section-box h1 {
+    font-size: 1.5rem;
+  }
+ 
+  /* Content box */
+  .content-box {
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+ 
+  /* Box-row imagen + texto: apilar verticalmente */
+  .box-row,
+  .box-row.reverse {
+    flex-direction: column;
+  }
+ 
+  .box-img {
+    max-width: 100%;
+    width: 100%;
+  }
+ 
+  .box-row .content-box {
+    width: 100%;
+    margin: 0;
+  }
+ 
+  /* Precios: 2 columnas en tablet */
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+ 
+  /* Salas: 2 columnas en tablet */
+  .salas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+ 
+  /* Puntos: 2 columnas en tablet */
+  .puntos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+ 
+  /* About box */
+  .about-box {
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+ 
+  /* Info puntos */
+  .infopuntos-box {
+    padding: 1.25rem 1.25rem;
+    margin-bottom: 2rem;
+  }
+ 
+  /* Footer */
+  .footer-inner {
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+ 
+}
+ 
+/* Móvil: 480px y menos */
+@media (max-width: 480px) {
+ 
+  .main-content {
+    padding: 1.5rem 0.75rem;
+  }
+ 
+  .section-box {
+    padding: 1.25rem 1rem;
+    margin: 1.5rem auto;
+  }
+ 
+  .section-box h1 {
+    font-size: 1.3rem;
+  }
+ 
+  .content-box {
+    padding: 1.25rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+ 
+  /* Precios: 1 columna en móvil */
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+ 
+  /* Salas: 1 columna en móvil */
+  .salas-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+ 
+  .sala-card {
+    padding: 1.25rem;
+  }
+ 
+  /* Puntos: 1 columna en móvil */
+  .puntos-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+ 
+  /* About box */
+  .about-box {
+    padding: 1.25rem 1rem;
+  }
+ 
+  .about-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    padding: 0.6rem 0;
+  }
+ 
+  /* Info puntos */
+  .infopuntos-box {
+    padding: 1rem;
+  }
+ 
+  /* Topbar botones auth más pequeños */
+  .btn-login,
+  .btn-registro {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.78rem;
+  }
+ 
+}
